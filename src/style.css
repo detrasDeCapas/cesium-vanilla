@@ -41,18 +41,16 @@ header {
     }
 
     #uimapelements {
-        padding: 16px;
+        padding: 8px 8px 140px 8px;
         box-sizing: border-box;
         pointer-events: none; /* Allows interaction with map underneath */
         display: flex;
         gap: 16px;
         flex-direction: row;
         .map-info {
-            background: rgba(255, 255, 255, 1);
-            border-right: 1px solid #ccc;
             padding: 10px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-            flex: 0 1 33.33%;
+            flex: 0 1 27%;
             min-width: 0;
             border-radius: 16px;
         }
@@ -60,6 +58,8 @@ header {
             pointer-events: auto;
         }
         .map-controls {
+            flex: 1 1 100%;
+            pointer-events: none;
         }
     }
 }
@@ -109,6 +109,19 @@ header {
 }
 .button-warning:hover {
     background: #ff8f00;
+}
+
+.surface-blur {
+    background-color: #b3b2af99;   
+    border-radius: 12px;
+    padding: 1rem;
+    position: relative;
+    box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
+    box-sizing: border-box;
+    width: calc(100% - 4rem);
+    color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(15px);
+    background-blend-mode: overlay;
 }
 
 /* Responsive adjustments */
