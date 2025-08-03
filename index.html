@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet Map</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Geoportal con Leaflet y VanillaJS</h1>
+    </header>
+    <div id="map">
+        <div id="cesiumContainer" class="full-size"></div>
+        <div id="uimapelements" class="full-size">
+            <section class="map-info">
+                <h2>Controles</h2>
+                <ul>
+
+                </ul>
+            </section>
+            <div class="map-controls">
+                <button id="zoomIn" class="button button-primary">+</button>
+                <button id="zoomOut" class="button button-primary">-</button>
+                <button id="resetView" class="button button-secondary">Reiniciar Vista</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="src/main.ts"></script>
+</body>
+</html>
